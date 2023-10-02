@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List App</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- Bootstrap CDN -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">
+            <i class="fas fa-book-open-reader text-primary"></i>
+            My <span class="text-primary">Book</span> List
+        </h1>
+        <div class="p-3 bg-dark-subtle">
+            <p><span style="font-weight: bold;">Languages/ Frameworks Used:</span> HTML, Bootstrap CSS, JavaScript,
+                FontAwesome</p>
+            <ul class="">
+                <li class="collection-item">
+                    Can be used as a task manager, booklist, movielist etc. 
+                </li>
+            </ul>
+        </div>
+        <form action="" id="book-form" class="">
+            <div class="form-group my-2">
+                <label for="title">Title</label>
+                <input type="text" id="title"  class="form-control">
+            </div>
+            <div class="form-group my-2">
+                <label for="author">Author</label>
+                <input type="text" id="author"  class="form-control">
+            </div>
+            <div class="form-group my-2">
+                <label for="isbn">ISBN#</label>
+                <input type="number" id="isbn"  class="form-control">
+            </div>
+            <input id="addBookButton" type="submit" value="Add Book" disabled class="btn btn-primary my-2 btn-block">
+        </form>
+        <table class="table mt-5 table-striped">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list">
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- SCRIPT -->
+    <script src="main.js"></script>
+</body>
+</html>
